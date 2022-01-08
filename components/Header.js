@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const tabs = [
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
@@ -17,10 +19,13 @@ export default function Header() {
     return (
         <>
             <div className="my-3 mx-auto w-auto flex flex-row justify-center items-center">
-                <img
-                    className="block h-9 w-auto"
-                    src="./divination_logo.png"
+                <Image
+                    className="block w-auto"
+                    src="/divination_logo.png"
                     alt="Divination"
+                    height={36}
+                    width={36}
+                    priority={true}
                 />
                 <text className="block text-white ml-3 font-mono tracking-wide">Divination</text>
             </div>
