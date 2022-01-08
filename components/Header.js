@@ -22,7 +22,7 @@ export default function Header() {
                     src="./divination_logo.png"
                     alt="Divination"
                 />
-                <text className="hidden md:block text-white ml-3 font-semibold tracking-wide">Divination</text>
+                <text className="block text-white ml-3 font-mono tracking-wide">Divination</text>
             </div>
             <div className="mx-auto w-4/5 md:w-1/2 lg:w-3/6 xl:w-5/12 my-5">
                 <div className="">
