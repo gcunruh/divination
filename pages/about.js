@@ -17,8 +17,8 @@ const people = [
 export default function About() {
     return (
         <Layout>
-            <div className="mt-6 text-xl">
-                <ul role="list" className="mx-auto w-72">
+            <div className="mt-6 text-xl w-10/12 max-w-lg mx-auto">
+                <ul role="list" className="px-1">
                     {people.map((person) => (
                         <li
                             key={person.email}

@@ -2,8 +2,8 @@ import Image from "next/image"
 
 const tabs = [
     { name: 'Home', href: '/' },
+    { name: 'Products', href: '/products' },
     { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
 ]
 
 import { useRouter } from "next/router";
@@ -17,7 +17,7 @@ export default function Header() {
 
     return (
         <>
-            <div className="my-3 mx-auto w-auto flex flex-row justify-center items-center">
+            <div className="my-3 mx-auto w-10/12 max-w-xl flex flex-row justify-center items-center">
                 <Image
                     className="block w-auto"
                     src="/divination_logo.png"
