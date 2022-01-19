@@ -93,7 +93,7 @@ export default function Home() {
         onClick={() => router.push("/about")}
         className="w-9/12 max-w-xs items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-purple-800 bg-purple-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-800"
       >
-        Let's Talk
+        Let&apos;s Talk
         <ArrowRightIcon className="h-4 px-1 inline-block" />
       </button>
     </Layout>
