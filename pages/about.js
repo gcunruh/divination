@@ -1,4 +1,4 @@
-import { BsLinkedin, BsTwitter } from "react-icons/bs";
+import { BsLinkedin, BsTwitter, BsGlobe } from "react-icons/bs";
 import Layout from "../components/Layout"
 
 const people = [
@@ -36,12 +36,12 @@ export default function About() {
                                     </dd>
                                 </dl>
                             </div>
-                            <div>
+                            <div className="divide-y divide-gray-200">
                                 <div className="-mt-px flex divide-x divide-gray-200">
                                     <div className="-ml-px w-0 flex-1 flex">
                                         <a
                                             href={person.twitter}
-                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-br-lg hover:text-gray-500"
+                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500"
                                         >
                                             <BsTwitter className="w-5 h-5 text-gray-400" aria-hidden="true" />
                                             <span className="ml-3">Twitter</span>
@@ -50,13 +50,23 @@ export default function About() {
                                     <div className="w-0 flex-1 flex">
                                         <a
                                             href={person.linkedin}
-                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500"
                                         >
                                             <BsLinkedin className="w-5 h-5 text-gray-400" aria-hidden="true" />
                                             <span className="ml-3">Linkedin</span>
                                         </a>
                                     </div>
-
+                                </div>
+                                <div className="-mt-px flex">
+                                    <div className="w-0 flex-1 flex">
+                                        <a
+                                            href="https://gabrielunruh.com"
+                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                                        >
+                                            <BsGlobe className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                                            <span className="ml-3">Website</span>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </li>

@@ -3,38 +3,43 @@ import Image from 'next/image'
 import Layout from '../components/Layout'
 
 import {
-  AcademicCapIcon,
-  BadgeCheckIcon,
-  CashIcon,
-  ClockIcon,
-  ReceiptRefundIcon,
-  UsersIcon,
-  ArrowRightIcon
+  ArrowRightIcon,
+  PaperAirplaneIcon,
+  BeakerIcon,
+  SparklesIcon,
+  HeartIcon
 } from '@heroicons/react/outline'
 
 import { useRouter } from 'next/router'
+import { backgroundSize } from 'tailwindcss/defaultTheme'
+
+const customTextStyles = {
+  animation: "flow 30s ease-in-out infinite",
+  background: "linear-gradient(-60deg, #904e95, #904e95, #e73c7e, #ee7752)",
+  backgroundSize: "300%",
+}
 
 const actions = [
   {
-    title: 'APIs',
+    title: 'APIs and Data Extraction',
     description: "",
-    icon: ClockIcon,
-    iconForeground: 'text-teal-700',
-    iconBackground: 'bg-teal-50',
+    icon: PaperAirplaneIcon,
+    iconForeground: 'text-red-700',
+    iconBackground: 'bg-red-50',
   },
   {
     title: 'Web3',
-    icon: BadgeCheckIcon,
+    icon: SparklesIcon,
     iconForeground: 'text-purple-700',
     iconBackground: 'bg-purple-50',
   },
   {
-    title: 'Data Extraction',
-    icon: UsersIcon,
-    iconForeground: 'text-sky-700',
-    iconBackground: 'bg-sky-50',
+    title: 'Product Transformation',
+    icon: BeakerIcon,
+    iconForeground: 'text-green-700',
+    iconBackground: 'bg-green-50',
   },
-  { title: 'Product Innovation', href: '#', icon: CashIcon, iconForeground: 'text-yellow-700', iconBackground: 'bg-yellow-50' },
+  { title: 'Future of Healthcare', href: '#', icon: HeartIcon, iconForeground: 'text-red-700', iconBackground: 'bg-red-50' },
 ]
 
 function classNames(...classes) {
@@ -47,7 +52,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="my-10 text-2xl text-transparent bg-clip-text bg-gradient-to-br from-red-400 via-purple-400 to-teal-300 max-w-lg mx-auto">
+      <div style={{ backgroundSize: "300%" }} className="my-10 text-2xl text-transparent bg-clip-text bg-gradient-to-br from-red-400 via-purple-400 to-teal-300 max-w-lg mx-auto animate-flow">
         Divination is a human-readable product studio making magic in the digital age.
       </div>
       <h1 className="text-xl my-4">Our Focus</h1>
@@ -82,8 +87,13 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <div className="mt-14 w-full md:w-3/5 flex mx-auto flex-col items-center">
-        <img className="mx-auto h-64 opacity-80" src="./langs_div.png" />
+      <div className="mt-12 w-full md:w-3/5 flex mx-auto flex-col items-center">
+        <div className="w-9/12 h-52 relative">
+          <img className="z-20 absolute top-1 -left-24 right-0 mx-auto h-36 animate-floatfast right-" src="./js_div.png" />
+          <img className="z-10 absolute -bottom-2 left-4 right-0 mx-auto h-36 animate-floatslow" src="./rust_div.png" />
+          <img className="z-30 absolute -top-4 left-24 right-0 mx-auto h-36 animate-floatmed" src="./python_div.png" />
+        </div>
+
         <div className="my-8 text-lg">
           Magic comes in many forms
         </div>
@@ -91,7 +101,7 @@ export default function Home() {
       <button
         type="button"
         onClick={() => router.push("/about")}
-        className="w-9/12 max-w-xs items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-purple-800 bg-purple-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-800"
+        className="mb-9 w-9/12 max-w-xs items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-tahiti focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-800"
       >
         Let&apos;s Talk
         <ArrowRightIcon className="h-4 px-1 inline-block" />
