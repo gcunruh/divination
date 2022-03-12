@@ -56,6 +56,9 @@ export default function Home() {
         Divination is a human-readable product studio making magic in the digital age.
       </div>
       <h1 className="text-xl my-4">Our Focus</h1>
+      <div className="text-md my-4">
+        We are a fully featured product studio with experience in finance, ops, and engineering from ideation to launch.
+      </div>
       <div className="mx-auto w-10/12 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
         {actions.map((action, actionIdx) => (
           <div

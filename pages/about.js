@@ -34,6 +34,9 @@ export default function About() {
                                             {person.role}
                                         </span>
                                     </dd>
+                                    <dd className="text-sm text-gray-500 px-2 pt-4">
+                                        Focused on outcomes and exceptional craftsmanship in technology, Gabriel has experience in corporate strategy, research, and technology roles across finance, academia, and startups.
+                                    </dd>
                                 </dl>
                             </div>
                             <div className="divide-y divide-gray-200">
