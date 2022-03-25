@@ -78,7 +78,7 @@ export default function Studio() {
                                 Finance
                             </h2>
                             <div className="my-4 mx-5">
-                                Financial services including accounting setup, financial modeling, and fundraising strategy
+                                Financial services including financial modeling, and fundraising strategy, and startup bookkeeping
                             </div>
                         </div>
                     </li>
