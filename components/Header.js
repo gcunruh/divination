@@ -28,7 +28,7 @@ export default function Header() {
                 />
                 <text className="block text-white ml-3 font-mono tracking-wide">Divination</text>
             </div>
-            <div className="mx-auto w-4/5 md:w-1/2 lg:w-3/6 xl:w-5/12 my-5">
+            <div className="mx-auto w-11/12 md:w-1/2 lg:w-3/6 xl:w-5/12 my-5">
                 <div className="">
                     <nav className="relative z-0 rounded-lg shadow flex divide-x divide-gray-200" aria-label="Tabs">
                         {tabs.map((tab, tabIdx) => (
