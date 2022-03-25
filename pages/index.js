@@ -57,7 +57,7 @@ export default function Home() {
       </div>
       <h1 className="text-xl my-4">Our Focus</h1>
       <div className="text-md my-4">
-        We are a fully featured product studio with experience in engineering, strategy, and finance from ideation to launch.
+        We are a product studio with experience in engineering, strategy, and finance from ideation to launch.
       </div>
       <div className="mx-auto w-10/12 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
         {actions.map((action, actionIdx) => (

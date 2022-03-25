@@ -35,7 +35,7 @@ export default function About() {
                                         </span>
                                     </dd>
                                     <dd className="text-sm text-gray-500 px-2 pt-4">
-                                        Focused on outcomes and exceptional craftsmanship in technology, Gabriel has experience in corporate strategy, research, and technology roles across finance, academia, and startups.
+                                        Focused on outcomes and exceptional craftsmanship in technology, Gabriel has experience in technology, corporate strategy, and research, roles across finance, academia, and business.
                                     </dd>
                                 </dl>
                             </div>

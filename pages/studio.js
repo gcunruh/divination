@@ -1,11 +1,7 @@
 import { BsLinkedin, BsTwitter, BsWater } from "react-icons/bs";
 import Layout from "../components/Layout"
 
-function classNames(...classes) {
-    return classes.filter(Boolean).join(' ')
-}
-
-export default function Services() {
+export default function Studio() {
     return (
         <Layout>
             <div className="mt-8 w-10/12 mx-auto px-2">

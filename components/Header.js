@@ -2,7 +2,7 @@ import Image from "next/image"
 
 const tabs = [
     { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
+    { name: 'The Studio', href: '/studio' },
     { name: 'About', href: '/about' },
 ]
 
