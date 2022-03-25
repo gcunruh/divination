@@ -90,7 +90,7 @@ export default function Studio() {
                                 Advisory
                             </h2>
                             <div className="my-4 mx-5">
-                                Stategic advisory including independent directorships, audit committee, and research
+                                Stategic advisory including independent directorships, audit committee, and industry commentary/research
                             </div>
                         </div>
                     </li>
