@@ -39,6 +39,7 @@ export default function Studio() {
                             </div>
                         </div>
                     </li>
+                    <a href="https://scacchi.vercel.app">
                     <li className="col-span-1 flex shadow-sm rounded-md">
                         <div
                             className=
@@ -53,6 +54,7 @@ export default function Studio() {
                             </div>
                         </div>
                     </li>
+                    </a>
                 </ul >
                 <h2 className="text-lg mt-8 mb-4">
                     External Engagements
