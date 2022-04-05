@@ -9,7 +9,7 @@ module.exports = {
         'tahiti': '#EC916A'
       },
       animation: {
-        flow: "flow 5s ease-in-out infinite",
+        flow: "flow 3s ease-in-out infinite",
         floatfast: 'float 3s ease-in-out infinite',
         floatslow: 'float 3s ease-out infinite',
         floatmed: 'float 3s ease-in infinite',

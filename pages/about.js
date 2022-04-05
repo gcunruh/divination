@@ -22,11 +22,11 @@ export default function About() {
                     {people.map((person) => (
                         <li
                             key={person.email}
-                            className="col-span-1 flex flex-col text-center bg-white rounded-lg shadow divide-y divide-gray-200"
+                            className="col-span-1 flex flex-col text-center bg-black bg-opacity-40 rounded-lg shadow-lg border border-zinc-600"
                         >
                             <div className="flex-1 flex flex-col p-8">
                                 <img className="w-32 h-32 flex-shrink-0 mx-auto rounded-full" src={person.imageUrl} alt="" />
-                                <h3 className="mt-6 text-gray-900 text-sm font-medium">{person.name}</h3>
+                                <h3 className="mt-6 text-white text-sm font-medium">{person.name}</h3>
                                 <dl className="mt-1 flex-grow flex flex-col justify-between">
                                     <dt className="sr-only">Role</dt>
                                     <dd className="mt-3">
@@ -34,44 +34,53 @@ export default function About() {
                                             {person.role}
                                         </span>
                                     </dd>
-                                    <dd className="text-sm text-gray-500 px-2 pt-4">
-                                        Focused on outcomes and exceptional craftsmanship in technology, Gabriel has experience in technology, corporate strategy, and research, roles across finance, academia, and business.
+                                    <dd className="text-sm text-zinc-300 px-2 pt-4">
+                                        Focused on outcomes and exceptional craftsmanship in technology, Gabriel has experience in technology and corporate strategy roles across industries and lifecycles.
                                     </dd>
                                 </dl>
                             </div>
-                            <div className="divide-y divide-gray-200">
-                                <div className="-mt-px flex divide-x divide-gray-200">
-                                    <div className="-ml-px w-0 flex-1 flex">
+                            <div className="rounded-lg py-3 bg-zinc-800 hover:bg-zinc-900 mx-8 my-6 ring-1 ring-zinc-600 transition ease-in-out delay-50">
+                                <a
+                                            href={person.twitter}
+                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm font-medium border border-transparent"
+                                >
+                                            <BsTwitter className="w-5 h-5" aria-hidden="true" />
+                                            <span className="ml-3">Twitter</span>
+                                </a>
+                            </div>
+                            {/* <div className="divide-y divide-zinc-600">
+                                <div className="-mt-px flex divide-x divide-zinc-600">
+                                    <div className="-ml-px w-0 flex-1 flex text-zinc-300 hover:text-white">
                                         <a
                                             href={person.twitter}
-                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500"
+                                            className="relative w-0 flex-1 inline-flex items-center justify-center py-4 text-sm font-medium border border-transparent"
                                         >
-                                            <BsTwitter className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                                            <BsTwitter className="w-5 h-5" aria-hidden="true" />
                                             <span className="ml-3">Twitter</span>
                                         </a>
                                     </div>
-                                    <div className="w-0 flex-1 flex">
+                                    <div className="w-0 flex-1 flex text-zinc-300 hover:text-white">
                                         <a
                                             href={person.linkedin}
-                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent hover:text-gray-500"
+                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm font-medium border border-transparent"
                                         >
-                                            <BsLinkedin className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                                            <BsLinkedin className="w-5 h-5" aria-hidden="true" />
                                             <span className="ml-3">Linkedin</span>
                                         </a>
                                     </div>
                                 </div>
                                 <div className="-mt-px flex">
-                                    <div className="w-0 flex-1 flex">
+                                    <div className="w-0 flex-1 flex text-zinc-300 hover:text-white">
                                         <a
                                             href="https://gabrielunruh.com"
-                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm text-gray-700 font-medium border border-transparent rounded-bl-lg hover:text-gray-500"
+                                            className="relative -mr-px w-0 flex-1 inline-flex items-center justify-center py-4 text-sm font-medium border border-transparent rounded-bl-lg"
                                         >
-                                            <BsGlobe className="w-5 h-5 text-gray-400" aria-hidden="true" />
+                                            <BsGlobe className="w-5 h-5" aria-hidden="true" />
                                             <span className="ml-3">Website</span>
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </li>
                     ))}
                 </ul>

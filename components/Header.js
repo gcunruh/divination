@@ -15,7 +15,7 @@ function Pill({ text, href }) {
 
     return (
         <Link href={href}>
-            <a className={"flex flex-row items-center mx-1 text-sm cursor-pointer rounded-full px-6 h-8 hover:opacity-60 transition ease-in-out delay-50 " + conditionalStyle}>
+            <a className={"flex flex-row items-center mx-[2px] text-sm cursor-pointer rounded-full px-6 h-8 hover:opacity-60 transition ease-in-out delay-50 " + conditionalStyle}>
             <div className="">
                 {text}    
             </div>
@@ -40,7 +40,7 @@ export default function Header() {
                 />
                 <text className="text-white ml-3 font-mono tracking-wide">Divination</text>
             </div>
-            <div className="flex flex-row rounded-full bg-black border-2 border-black h-10 my-4 bg-opacity-40 border-opacity-0 shadow-md items-center">
+            <div className="flex flex-row rounded-full bg-black border-2 border-black h-10 my-4 bg-opacity-30 border-opacity-0 shadow-lg items-center">
                 <Pill text="Home" href="/" />
                 <Pill text="Studio" href="/studio" />
                 <Pill text="Team" href="/about" />
