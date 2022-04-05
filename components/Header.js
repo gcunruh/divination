@@ -15,7 +15,7 @@ function Pill({ text, href }) {
 
     return (
         <Link href={href}>
-            <a className={"flex flex-row items-center mx-[2px] text-sm cursor-pointer rounded-full px-6 h-8 hover:opacity-60 transition ease-in-out delay-50 " + conditionalStyle}>
+            <a className={"flex flex-row items-center mx-[2px] text-sm cursor-pointer rounded-full px-4 md:px-6 h-8 hover:opacity-60 transition ease-in-out delay-50 " + conditionalStyle}>
             <div className="">
                 {text}    
             </div>
@@ -25,25 +25,26 @@ function Pill({ text, href }) {
 }
 
 export default function Header() {
-    const router = useRouter();
 
     return (
-        <div className="my-3 md:my-4 flex flex-row justify-center md:justify-between w-full">
-            <div className="flex-row justify-center items-center hidden md:flex">
-                <Image
-                    className="block w-auto"
-                    src="/divination_logo.png"
-                    alt="Divination"
-                    height={36}
-                    width={36}
-                    priority={true}
-                />
-                <text className="text-white ml-3 font-mono tracking-wide">Divination</text>
-            </div>
-            <div className="flex flex-row rounded-full bg-black border-2 border-black h-10 my-4 bg-opacity-30 border-opacity-0 shadow-lg items-center">
+        <div className="my-3 md:my-4 flex flex-row justify-between items-center w-full px-3 md:px-0 sticky top-0">
+            <Link href="/">
+                <a className="flex flex-row justify-center items-center rounded-full backdrop-blur-md bg-transparent px-1 h-10">
+                    <Image
+                        className="block w-auto"
+                        src="/divination_logo.png"
+                        alt="Divination"
+                        height={34}
+                        width={34}
+                        priority={true}
+                    />
+                    <text className="text-white ml-3 font-mono tracking-wide hidden md:block">Divination</text>
+                </a>
+            </Link>
+            <div className="flex flex-row rounded-full bg-zinc-800 border-2 border-black h-10 my-4 bg-opacity-60 border-opacity-0 shadow-md items-center backdrop-blur-md">
                 <Pill text="Home" href="/" />
                 <Pill text="Studio" href="/studio" />
-                <Pill text="Team" href="/about" />
+                <Pill text="About" href="/about" />
             </div>
         </div>
     )
