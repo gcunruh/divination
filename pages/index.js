@@ -52,12 +52,12 @@ export default function Home() {
 
   return (
     <Layout>
-      <div className="mb-0 py-4 px-3 md:px-0 text-4xl md:text-5xl text-white max-w-4xl text-left">
+      <div className="mb-0 py-4 px-3 md:px-0 text-4xl md:text-5xl text-white max-w-4xl text-left font-bold">
         Divination is a human-readable product studio making magic in the digital age.
       </div>
       <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 my-6">
                 <li
-                    className="text-white col-span-1 flex flex-col text-left bg-zinc-800 rounded-2xl shadow-lg border border-zinc-600"
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
                     >
                         <div className="flex-1 flex flex-col my-4 mx-5">
                             <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
@@ -69,7 +69,7 @@ export default function Home() {
                         </div>
                     </li>
                     <li
-                    className="text-white col-span-1 flex flex-col text-left bg-zinc-800 rounded-2xl shadow-lg border border-zinc-600"
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
                     >
                         <div className="flex-1 flex flex-col my-4 mx-5">
                             <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
@@ -81,7 +81,7 @@ export default function Home() {
                         </div>
                     </li>
                     <li
-                    className="text-white col-span-1 flex flex-col text-left bg-zinc-800 rounded-2xl shadow-lg border border-zinc-600"
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
                     >
                         <div className="flex-1 flex flex-col my-4 mx-5">
                             <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">

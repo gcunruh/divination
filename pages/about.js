@@ -22,7 +22,7 @@ export default function About() {
                     {people.map((person) => (
                         <li
                             key={person.email}
-                            className="col-span-1 flex flex-col text-center bg-black bg-opacity-40 rounded-2xl shadow-lg border border-zinc-600"
+                            className="col-span-1 flex flex-col text-center bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
                         >
                             <div className="flex-1 flex flex-col p-8">
                                 <img className="w-32 h-32 flex-shrink-0 mx-auto rounded-full" src={person.imageUrl} alt="" />
