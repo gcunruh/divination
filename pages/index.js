@@ -52,63 +52,57 @@ export default function Home() {
 
   return (
     <Layout>
-      <div style={{ backgroundSize: "300%" }} className="my-10 text-2xl text-transparent bg-clip-text bg-gradient-to-br from-red-400 via-purple-400 to-teal-300 max-w-lg mx-auto animate-flow">
+      <div className="mb-0 py-4 px-3 md:px-0 text-4xl md:text-5xl text-white max-w-4xl text-left font-bold">
         Divination is a human-readable product studio making magic in the digital age.
       </div>
-      <h1 className="text-xl my-4">Our Focus</h1>
-      <div className="text-md my-4">
-        We are a product studio with experience in engineering, strategy, and finance from ideation to launch.
-      </div>
-      <div className="mx-auto w-10/12 rounded-lg bg-gray-200 overflow-hidden shadow divide-y divide-gray-200 sm:divide-y-0 sm:grid sm:grid-cols-2 sm:gap-px">
-        {actions.map((action, actionIdx) => (
-          <div
-            key={action.title}
-            className={classNames(
-              actionIdx === 0 ? 'rounded-tl-lg rounded-tr-lg sm:rounded-tr-none' : '',
-              actionIdx === 1 ? 'sm:rounded-tr-lg' : '',
-              actionIdx === actions.length - 2 ? 'sm:rounded-bl-lg' : '',
-              actionIdx === actions.length - 1 ? 'rounded-bl-lg rounded-br-lg sm:rounded-bl-none' : '',
-              'relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-indigo-500'
-            )}
-          >
-            <div>
-              <span
-                className={classNames(
-                  action.iconBackground,
-                  action.iconForeground,
-                  'rounded-full inline-flex p-3 ring-4 ring-white'
-                )}
-              >
-                <action.icon className="h-6 w-6" aria-hidden="true" />
-              </span>
-            </div>
-            <div className="mt-8">
-              <p className="text-md text-gray-500">
-                {action.title}
-              </p>
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="mt-12 w-full md:w-3/5 flex mx-auto flex-col items-center">
-        <div className="w-9/12 h-52 relative">
-          <img className="z-20 absolute top-1 -left-24 right-0 mx-auto h-36 animate-floatfast right-" src="./js_div.png" />
-          <img className="z-10 absolute -bottom-2 left-4 right-0 mx-auto h-36 animate-floatslow" src="./rust_div.png" />
-          <img className="z-30 absolute -top-4 left-24 right-0 mx-auto h-36 animate-floatmed" src="./python_div.png" />
-        </div>
-
-        <div className="my-8 text-lg">
-          Magic comes in many forms
-        </div>
-      </div>
+      <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 my-6">
+                <li
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
+                    >
+                        <div className="flex-1 flex flex-col my-4 mx-5">
+                            <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
+                                <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-tahiti animate-pulse"> </span>Engineering
+                            </h2>
+                            <div className="">
+                                Hands on engineering and architecture guidance ranging from proof of concepts to production-ready applications
+                            </div>
+                        </div>
+                    </li>
+                    <li
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
+                    >
+                        <div className="flex-1 flex flex-col my-4 mx-5">
+                            <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
+                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Finance
+                            </h2>
+                            <div className="">
+                                Financial services including financial modeling, and fundraising strategy, and startup bookkeeping
+                            </div>
+                        </div>
+                    </li>
+                    <li
+                    className="text-white col-span-1 flex flex-col text-left bg-black bg-opacity-40 rounded-2xl shadow-xl border border-zinc-600"
+                    >
+                        <div className="flex-1 flex flex-col my-4 mx-5">
+                            <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
+                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-blue-400 animate-pulse"> </span>Advisory
+                            </h2>
+                            <div className="">
+                                Stategic advisory including independent directorships, audit committee, and industry commentary/research
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+      <div className='w-48 px-3 md:px-0 mb-72'>
       <button
         type="button"
         onClick={() => router.push("/about")}
-        className="mb-9 w-9/12 max-w-xs items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-tahiti focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-800"
+        className="my-8 w-full py-3 text-sm font-medium text-white rounded-xl bg-zinc-800 focus:outline-none ring-1 ring-zinc-600 focus:ring-1 focus:ring-offset-1 focus:ring-white hover:ring-1 hover:ring-offset-1 hover:ring-white hover:bg-opacity-40 hover:scale-105 transition ease-in-out delay-50"
       >
         Let&apos;s Talk
         <ArrowRightIcon className="h-4 px-1 inline-block" />
       </button>
+      </div>
     </Layout>
   )
 }
