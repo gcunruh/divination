@@ -64,7 +64,7 @@ export default function Home() {
                                 <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-tahiti animate-pulse"> </span>Engineering
                             </h2>
                             <div className="">
-                                Hands on engineering and architecture guidance ranging from proof of concepts to production-ready applications
+                                Engineering and architecture guidance ranging from proof of concepts to production-ready applications
                             </div>
                         </div>
                     </li>
@@ -73,10 +73,10 @@ export default function Home() {
                     >
                         <div className="flex-1 flex flex-col my-4 mx-5">
                             <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
-                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Finance
+                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Strategy
                             </h2>
                             <div className="">
-                                Financial services including financial modeling, and fundraising strategy, and startup bookkeeping
+                                Financial modeling, pricing analysis, and fundraising strategies
                             </div>
                         </div>
                     </li>
@@ -88,12 +88,12 @@ export default function Home() {
                             <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-blue-400 animate-pulse"> </span>Advisory
                             </h2>
                             <div className="">
-                                Stategic advisory including independent directorships, audit committee, and industry commentary/research
+                                Startup advisory, independent directorships, and industry commentary
                             </div>
                         </div>
                     </li>
                 </ul>
-      <div className='w-48 px-3 md:px-0 mb-72'>
+      <div className='w-48 px-3 md:px-0'>
       <button
         type="button"
         onClick={() => router.push("/about")}

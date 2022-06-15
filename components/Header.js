@@ -43,7 +43,7 @@ export default function Header() {
             </Link>
             <div className="flex flex-row rounded-full bg-zinc-800 border-2 border-black h-10 my-4 bg-opacity-60 border-opacity-0 shadow-md items-center backdrop-blur-md">
                 <Pill text="Home" href="/" />
-                {/* <Pill text="Studio" href="/studio" /> */}
+                <Pill text="Studio" href="/studio" />
                 <Pill text="About" href="/about" />
             </div>
         </div>
