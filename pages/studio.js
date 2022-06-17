@@ -20,7 +20,7 @@ export default function Studio() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Intuily" description="Intuily connects you with health & wellness practitioners who are the perfect match for your personality and style" imageSrc="./intuily.png" href="https://www.intuily.com/" />
-                <StudioCard header="Moolah U" description="Moolah U gives parents tools to teach kids financial and personal responsibility" imageSrc="./moolahu.jpeg" href="https://moolahu.com/" />
+                {/* <StudioCard header="Moolah U" description="Moolah U gives parents tools to teach kids financial and personal responsibility" imageSrc="./moolahu.jpeg" href="https://moolahu.com/" /> */}
                 <StudioCard header="Stealth Web3 Company" description="Revolutionizing off-chain experiences using the power of Solana" imageSrc="./divination_logo.png" href="/studio" />
             </div>
             {/* <div className="font-bold mb-0 text-lg">
