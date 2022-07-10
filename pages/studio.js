@@ -10,7 +10,7 @@ export default function Studio() {
     return (
         <Layout>
             <div className="font-bold mb-6 text-lg">
-                Studio
+                Internal
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Tipsea" description="Tipsea creates generative NFT thank you notes in the form of tasty digital drinks" imageSrc="./tipsea_icon.png" href="https://tipsea-web.vercel.app/" />

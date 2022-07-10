@@ -53,7 +53,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="mb-0 py-4 px-3 md:px-0 text-4xl md:text-5xl text-white max-w-4xl text-left font-bold">
-        Divination is a human-readable product studio making magic in the digital age.
+        Divination is a product studio making magic in the digital age.
       </div>
       <ul role="list" className="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3 my-6">
                 <li
@@ -76,7 +76,7 @@ export default function Home() {
                             <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Product
                             </h2>
                             <div className="">
-                                Product Development support including branding, UX/UI design, pricing strategy, product roadmaps
+                                Product Development support including product discover, brand, design, and roadmaps
                             </div>
                         </div>
                     </li>
@@ -93,6 +93,12 @@ export default function Home() {
                         </div>
                     </li>
                 </ul>
+      <div className="pt-4 pb-1 px-3 md:px-0 text-xl md:text-2xl text-white text-left font-bold">
+        What is a product studio?
+      </div>
+      <div className="py-4 px-3 md:px-0 text-md md:text-lg text-white text-left font-light">
+        A product studio is a platform for repeatable creation and growth of successful products. It has two wings: clients and its own software products. They are integrally connected and complement each other. Working with clients on the implementation of their product ideas, a studio acts as a tech partner, bringing real-world industry development and real time knowledge on day one.
+      </div>
       <div className='w-48 px-3 md:px-0'>
       <button
         type="button"
