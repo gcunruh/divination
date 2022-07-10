@@ -64,7 +64,7 @@ export default function Home() {
                                 <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-tahiti animate-pulse"> </span>Engineering
                             </h2>
                             <div className="">
-                                Engineering and architecture guidance ranging from proof of concepts to production-ready applications
+                                Software engineering and architecture guidance ranging from proof of concepts to production-ready applications
                             </div>
                         </div>
                     </li>
@@ -73,10 +73,10 @@ export default function Home() {
                     >
                         <div className="flex-1 flex flex-col my-4 mx-5">
                             <h2 className="text-md font-regular py-2 rounded-t-lg text-zinc-300">
-                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Strategy
+                            <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Product
                             </h2>
                             <div className="">
-                                Financial modeling, pricing analysis, and fundraising strategies
+                                Product Development support including branding, UX/UI design, pricing strategy, product roadmaps
                             </div>
                         </div>
                     </li>
@@ -88,7 +88,7 @@ export default function Home() {
                             <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-blue-400 animate-pulse"> </span>Advisory
                             </h2>
                             <div className="">
-                                Startup advisory, independent directorships, and industry commentary
+                                Startup investing & advisory, independent directorships, and industry commentary
                             </div>
                         </div>
                     </li>

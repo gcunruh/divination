@@ -13,10 +13,10 @@ export default function Studio() {
                 Studio
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
-                <StudioCard header="Tipsea" description="Tipsea creates generative NFT thank you notes in the form of tasty digital cocktails" imageSrc="./tipsea_icon.png" href="https://tipsea-web.vercel.app/" />
+                <StudioCard header="Tipsea" description="Tipsea creates generative NFT thank you notes in the form of tasty digital drinks" imageSrc="./tipsea_icon.png" href="https://tipsea-web.vercel.app/" />
             </div>
             <div className="font-bold mb-6 text-lg">
-                Advisory & Engineering
+                Selected Clients
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Intuily" description="Intuily connects you with health & wellness practitioners who are the perfect match for your personality and style" imageSrc="./intuily.png" href="https://www.intuily.com/" />
