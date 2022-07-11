@@ -14,6 +14,8 @@ export default function Studio() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Tipsea" description="Tipsea creates generative NFT thank you notes in the form of tasty digital drinks" imageSrc="./tipsea_icon.png" href="https://tipsea-web.vercel.app/" />
+                <StudioCard header="Solana Spellbook" description="Solana Spellbook is a developer resource that provides essential tools, tips, and tricks for building on Solana" imageSrc="./spellbook_icon.png" href="https://spellbook.divination.dev/" />
+
             </div>
             <div className="font-bold mb-6 text-lg">
                 Selected Clients
