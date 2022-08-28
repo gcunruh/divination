@@ -35,7 +35,7 @@ export default function About() {
                                         </span>
                                     </dd>
                                     <dd className="text-sm text-zinc-300 px-2 pt-4">
-                                        Gabriel is an executive and engineer focused on outcomes and exceptional craftsmanship in technology across industries and lifecycles He is a subject matter expert in building technology in highly regulated or legally complex industries including healthcare, media, and gaming.
+                                        Gabriel is an executive and engineer focused on outcomes and exceptional craftsmanship in technology across industries and lifecycles. He is a subject matter expert in building technology in highly regulated or legally complex industries including healthcare, media, and gaming.
                                     </dd>
                                 </dl>
                             </div>
