@@ -14,16 +14,16 @@ export default function Studio() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Tipsea" description="Tipsea creates generative NFT thank you notes in the form of tasty digital drinks" imageSrc="./tipsea_icon.png" href="https://tipsea-web.vercel.app/" />
+                <StudioCard header="Hera Health" description="Hera Health is global, efficient, and profitable on-chain health insurance solution for individuals" imageSrc="./hera_logo.png" href="https://hera-next.vercel.app/" />
                 <StudioCard header="Solana Spellbook" description="Solana Spellbook is a developer resource that provides essential tools, tips, and tricks for building on Solana" imageSrc="./spellbook_icon.png" href="https://spellbook.divination.dev/" />
-
             </div>
             <div className="font-bold mb-6 text-lg">
                 Selected Clients
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 mb-6 gap-6">
                 <StudioCard header="Intuily" description="Intuily connects you with health & wellness practitioners who are the perfect match for your personality and style" imageSrc="./intuily.png" href="https://www.intuily.com/" />
-                {/* <StudioCard header="Moolah U" description="Moolah U gives parents tools to teach kids financial and personal responsibility" imageSrc="./moolahu.jpeg" href="https://moolahu.com/" /> */}
-                <StudioCard header="Stealth Web3 Company" description="Revolutionizing off-chain experiences using the power of Solana" imageSrc="./divination_logo.png" href="/studio" />
+                <StudioCard header="Moolah U" description="Moolah U gives parents tools to teach kids financial and personal responsibility" imageSrc="./moolahu.jpeg" href="https://moolahu.com/" />
+                <StudioCard header="Stealth Solana Company" description="Revolutionizing off-chain experiences using the power of Solana" imageSrc="./divination_logo.png" href="/studio" />
             </div>
             {/* <div className="font-bold mb-0 text-lg">
                 Prior Creations
