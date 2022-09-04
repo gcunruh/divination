@@ -76,7 +76,7 @@ export default function Home() {
                             <span className="border border-zinc-300 rounded-full inline-block h-3 w-3 mr-1 bg-purple-500 animate-pulse"> </span>Product
                             </h2>
                             <div className="">
-                                Product Development support including product discover, brand, design, and roadmaps
+                                Product Development support including product discovery, design, and roadmaps
                             </div>
                         </div>
                     </li>
