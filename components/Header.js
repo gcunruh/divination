@@ -1,51 +1,42 @@
-import Image from "next/image"
+import { Fragment, useState } from "react";
+import { Dialog, Transition } from "@headlessui/react";
 import Link from "next/link";
+import { XMarkIcon } from "@heroicons/react/24/outline";
 
-const tabs = [
-    { name: 'Home', href: '/' },
-    { name: 'The Studio', href: '/studio' },
-    { name: 'About', href: '/about' },
-]
-
-import { useRouter } from "next/router";
-
-function Pill({ text, href }) {
-    const router = useRouter();
-    const conditionalStyle = router.pathname == href ? "bg-white text-black" : "bg-transparent text-white"
-
-    return (
-        <Link href={href}>
-            <a className={"flex flex-row items-center mx-[2px] text-sm cursor-pointer rounded-full px-4 md:px-6 h-8 hover:opacity-60 transition ease-in-out delay-50 " + conditionalStyle}>
-            <div className="">
-                {text}    
-            </div>
-            </a>
+export default function Header({ setOpen }) {
+  return (
+    <>
+      <div className="mt-3 md:mt-4 flex flex-col justify-between items-center w-full px-0 top-0">
+        <Link
+          href="/"
+          className="flex flex-row justify-center items-center rounded-full bg-transparent px-1 h-10 mb-2"
+        >
+          <text className={`text-4xl cloister`}>Divination</text>
         </Link>
-    )
-}
-
-export default function Header() {
-
-    return (
-        <div className="my-3 md:my-4 flex flex-row justify-between items-center w-full px-3 md:px-0 sticky top-0">
-            <Link href="/">
-                <a className="flex flex-row justify-center items-center rounded-full backdrop-blur-md bg-transparent px-1 h-10">
-                    <Image
-                        className="block w-auto"
-                        src="/divination_logo.png"
-                        alt="Divination"
-                        height={34}
-                        width={34}
-                        priority={true}
-                    />
-                    <text className="text-white ml-3 font-mono tracking-wide hidden md:block">Divination</text>
-                </a>
-            </Link>
-            <div className="flex flex-row rounded-full bg-zinc-800 border-2 border-black h-10 my-4 bg-opacity-60 border-opacity-0 shadow-md items-center backdrop-blur-md">
-                <Pill text="Home" href="/" />
-                <Pill text="Studio" href="/studio" />
-                <Pill text="About" href="/about" />
-            </div>
+        <div className="py-1 flex flex-row border-black border-t border-b w-full items-center px-2 md:px-3">
+          <div className="flex-1 flex text-sm">
+            <span className="hidden md:block font-medium">Late Night Edition</span>
+            <span className="font-medium md:hidden">Vol. XI</span>
+          </div>
+          <div className="flex-grow md:flex-1 flex news font-semibold pt-1">
+            <span className="m-auto">{new Date().toDateString()}</span>
+          </div>
+          <div
+            onClick={() => setOpen(true)}
+            className="flex-1 flex flex-row justify-end text-sm font-medium hover:font-bold hover:cursor-pointer"
+          >
+            <span className="hidden md:block">Contact Us</span>
+            <span className="md:hidden">Contact</span>
+          </div>
         </div>
-    )
+        <div className="text-4xl md:text-8xl font-extrabold tracking-tight text-center w-full pt-4">
+          <div className="">BAD PRODUCT</div>
+          <div className="">ENDS AT LAST!</div>
+        </div>
+        <div className="text-2xl md:text-3xl font-bold border-b border-black pt-4 md:pt-8 pb-4 md:pb-8 px-1 md:px-16 text-center uppercase tracking-tight w-full">
+          Divination is a product consultancy making magic in the digital age
+        </div>
+      </div>
+    </>
+  );
 }

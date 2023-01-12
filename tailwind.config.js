@@ -5,6 +5,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      FontFamily: {
+        'news': "Newsreader",
+        'cloister': "Cloister"
+      },
       colors: {
         'tahiti': '#EC916A'
       },
