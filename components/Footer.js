@@ -7,7 +7,7 @@ export default function Footer() {
             <img src="/barcode.png" />
 
             <div className="news normal-case font-medium">
-                "Disrupt or be disrupted"
+                &quot;Disrupt or be disrupted&quot;
             </div>
         </div>
     )
