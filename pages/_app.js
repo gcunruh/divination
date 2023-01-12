@@ -66,7 +66,7 @@ function MyApp({ Component, pageProps }) {
                         <a
                           target="_blank"
                           rel="noopener noreferrer"
-                          href="mailto:gabriel@divinaion.dev"
+                          href="mailto:gabriel@divination.dev"
                           className="flex flex-row gap-2 hover:cursor-pointer"
                         >
                           <img className="w-4" src="/envelope.svg" />
