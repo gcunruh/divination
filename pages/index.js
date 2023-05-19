@@ -9,174 +9,164 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <>
-      <div className="grid grid-cols-1 md:grid-cols-4 text-sm news">
-        <div className="border-b md:border-b-0 md:border-r border-black row-span-2 p-4">
-          <div className="text-xl font-black tracking-tighter mb-2 font-sans uppercase">
-            Divination tackles tough product challenges!
+    <main className="-mt-28 mx-auto md:bg-[url('/grid.png')] bg-[100%_auto] md:bg-[90%_auto] lg:bg-[85%_auto] xl:bg-[68%_auto] bg-right-top bg-no-repeat">
+      <div className="mx-auto pb-12">
+        <div className="flex flex-col px-4 lg:px-20 py-10 h-[30vh] md:h-[55vh] lg:h-[65vh] justify-center">
+          <div className="font-serif text-2xl md:text-4xl font-semibold leading-snug">
+            Catalyzing Change
+            <br />
+            Fueling Business Success
           </div>
-          <div className="mb-2">
-            Divination provides advisory and consulting services to businesses
-            of all sizes. We like being a part of massive digital transformation
-            stories. Our engagements include,
-          </div>
-          <ul className="list-disc ml-4 font-medium">
-            <li>Independent directorships & advisory</li>
-            <li>Full-scale digital product development</li>
-            <li>Software engineering</li>
-            <li>Industry commentary</li>
-          </ul>
-        </div>
-        <div className="border-b md:border-r border-black col-span-1 md:col-span-2 p-4">
-          <div className="text-xl font-black tracking-tighter mb-2 font-sans uppercase">
-            The Future is now
-          </div>
-          <div className="border border-black p-2 w-full h-36">
-            <div className="circuit w-full h-full" />
-          </div>
-          <div className="my-2">
-            When we aren&apos;t working with remarkable clients who are changing the
-            world, we are constantly building internally. We don&apos;t just know
-            cutting-edge tech, we live it everyday.
-          </div>
-          <div className="font-sans font-semibold tracking-tight uppercase mt-2">
-            Selected Clients
-          </div>
-          <div className="my-2 flex flex-col gap-1">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-              href="https://www.intuily.com/"
-            >
-              Intuily ↗
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-              href="https://mushroom.party/"
-            >
-              Mushroom Party ↗
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline"
-              href="https://magiceden.io/marketplace/moonstream"
-            >
-              Moonstream ↗
-            </a>
-            <div className="underline">Fantastics</div>
+          <div className="font-light w-full md:w-1/2 my-4">
+            Divination empowers Businesses to Thrive in Dynamic and Evolving
+            Markets through Personalized Strategic Consulting and Advisory
           </div>
         </div>
-        <div className="row-span-2 p-4 border-b border-black md:border-b-0">
-          <div className="news italic text-xl font-bold mb-2">
-            Check out our Founder&apos;s blog
+        <div className="flex flex-col z-40">
+          <div className="p-4">
+            <div className="font-serif italic text-xl font-bold mb-2" id="expertise">
+              Our Expertise
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+                Emerging Industries
+              </div>
+              <div className="font-light">
+                Embryonic industries face unique challenges from pricing to
+                capital structure. We offer deep expertise in these unqiue and
+                exciting periods in a business&apos;s lifecycle
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+                Change Management
+              </div>
+              <div className="font-light">
+                An otherwise strong business can face emerging headwinds from
+                internal and external threats. We have deep expertise in
+                tackling these threats early and often so businesses can
+                continue to thrive in any environment
+              </div>
+            </div>
           </div>
-          <div>
-            At Divination we are focused on technology that is rapidly changing
-            the future. Our founder&apos;s blog foucses on the implications of
-            emerging tech.{" "}
+          <div className="px-4 py-20">
+            <div className="font-serif italic text-xl font-bold mb-2" id="capabilities">
+              Our Capabilities
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+                Fractional CFO & COO Positions
+              </div>
+              <div className="font-light">
+              Transform your business with fractional CFO and COO positions,
+                  leveraging financial and operational leadership on a flexible
+                  basis.
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+              Strategy and Finance consulting
+              </div>
+              <div className="font-light">
+              Utilize metrics and strategy frameworks to identify challenges
+                  and opportunities, delivering optimized business outcomes.
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+              Independent directorships & advisory
+              </div>
+              <div className="font-light">
+              Elevate corporate decision making with idependent directors
+                  who provide honest and direct guidnace and oversight.
+              </div>
+            </div>
+            <div className="flex flex-col">
+              <div className="text-lg font-bold text-deepblue border-b-2 border-deepblue w-fit my-2">
+              Industry analysis & commentary
+              </div>
+              <div className="font-light">
+              Gain valuable industry insights and commentary to stay ahead
+                  in a rapidly evolving business landscape.
+              </div>
+            </div>
+          </div>
+          <div className="p-4">
+          <div className="font-serif italic text-xl font-bold " id="insights">
+              Trending Insights
+            </div>
+            <div className="font-light mb-2">
+              When we aren&apos;t working with clients, we stay on top of the
+              rapidly evolving business climate through research and analysis.
+            </div>
             <a
+              href="https://cerebration.medium.com/what-are-daos-good-for-anyways-108b8de7b60e"
               target="_blank"
               rel="noopener noreferrer"
-              className="underline"
-              href="https://cerebration.medium.com/"
+              className="my-2 border-black border-2 p-2 flex flex-row items-start gap-2 group h-16"
             >
-              Check it out here ↗
+              <div>
+                <img
+                  className="border-2 border-black h-full p-2"
+                  src="/align-left-icon.svg"
+                />
+              </div>
+              <div className="flex-1 group-hover:font-medium">
+                Why are Bolivia&apos;s Currency Woes Amplified by the Federal
+                Reserve&apos;s Rate Hikes
+              </div>
             </a>
-            .
+            <a
+              href="https://cerebration.medium.com/why-are-bolivias-currency-woes-amplified-by-the-federal-reserve-s-rate-hikes-15343afe3947"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="my-2 border-black border-2 p-2 flex flex-row items-start gap-2 group h-16"
+            >
+              <div>
+                <img
+                  className="border-2 border-black h-full p-2"
+                  src="/align-left-icon.svg"
+                />
+              </div>
+              <div className="flex-1 group-hover:font-medium">
+                What are DAOs good for anyways?
+              </div>
+            </a>
+            <a
+              href="https://cerebration.medium.com/the-new-space-race-5787fc3c2dfd"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="my-2 border-black border-2 p-2 flex flex-row items-start gap-2 group h-16"
+            >
+              <div>
+                <img
+                  className="border-2 border-black h-full p-2"
+                  src="/align-left-icon.svg"
+                />
+              </div>
+              <div className="flex-1 group-hover:font-medium">
+                The New Space Race
+              </div>
+            </a>
+            <a
+              href="https://cerebration.medium.com/whats-next-for-web3-5557a195b322"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="my-2 border-black border-2 p-2 flex flex-row items-start gap-2 group h-16"
+            >
+              <div>
+                <img
+                  className="border-2 border-black h-full p-2"
+                  src="/align-left-icon.svg"
+                />
+              </div>
+              <div className="flex-1 group-hover:font-medium">
+                What&apos;s next for Web3?
+              </div>
+            </a>
           </div>
-          <div className="font-sans font-semibold tracking-tight uppercase mt-2">
-            Recent Articles
-          </div>
-          <a
-            href="https://cerebration.medium.com/what-are-daos-good-for-anyways-108b8de7b60e"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="my-2 border border-black border-b-4 border-r-4 p-2 flex flex-row items-start gap-2 group"
-          >
-            <div>
-              <img
-                className="border border-black w-6 p-1"
-                src="/align-left-icon.svg"
-              />
-            </div>
-            <div className="flex-1 group-hover:font-medium">
-              What are DAOs good for anyways?
-            </div>
-          </a>
-          <a
-            href="https://cerebration.medium.com/the-new-space-race-5787fc3c2dfd"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="my-2 border border-black border-b-4 border-r-4 p-2 flex flex-row items-start gap-2 group"
-          >
-            <div>
-              <img
-                className="border border-black w-6 p-1"
-                src="/align-left-icon.svg"
-              />
-            </div>
-            <div className="flex-1 group-hover:font-medium">
-              The New Space Race
-            </div>
-          </a>
-          <a
-            href="https://cerebration.medium.com/whats-next-for-web3-5557a195b322"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="my-2 border border-black border-b-4 border-r-4 p-2 flex flex-row items-start gap-2 group"
-          >
-            <div>
-              <img
-                className="border border-black w-6 p-1"
-                src="/align-left-icon.svg"
-              />
-            </div>
-            <div className="flex-1 group-hover:font-medium">
-              What&apos;s next for Web3?
-            </div>
-          </a>
-        </div>
-        <div className="border-b md:border-b-0 md:border-r border-black p-4">
-          <div className="text-xl font-black tracking-tighter mb-2 font-sans uppercase">
-            Hera Health
-          </div>
-          <div className="my-2">
-            Hera Health is a prototypical global health insurance solution
-            powered by blockchain, that offers cross-border coverage, especially
-            in locations where insurance is expensive or inaccessible.
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-            href="https://hera-next.vercel.app/"
-          >
-            Check it out here ↗
-          </a>
-        </div>
-        <div className="md:border-r border-black p-4">
-          <div className="text-xl font-black tracking-tighter mb-2 font-sans uppercase">
-            Tipsea
-          </div>
-          <div className="my-2">
-            Tipsea allows you to create NFT thank you notes in the form of tasty
-            digital cocktails. Best of all, each digital drink can be redeemed
-            for cash so you can turn your digital drink into a real one.
-          </div>
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            className="underline"
-            href="https://www.tipsea.xyz/"
-          >
-            Check it out here ↗
-          </a>
         </div>
       </div>
-    </>
+    </main>
   );
 }

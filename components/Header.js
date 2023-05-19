@@ -1,42 +1,59 @@
 import { Fragment, useState } from "react";
-import { Dialog, Transition } from "@headlessui/react";
+import { Disclosure, Menu, Transition } from '@headlessui/react'
 import Link from "next/link";
-import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
+
+const navigation = [
+  { name: 'Expertise', href: '#expertise', current: false },
+  { name: 'Capabilities', href: '#capabilities', current: false },
+  { name: 'Insights', href: '#insights', current: false },
+  { name: 'Contact', href: '#', current: false },
+]
+
+function classNames(...classes) {
+  return classes.filter(Boolean).join(' ')
+}
 
 export default function Header({ setOpen }) {
   return (
-    <>
-      <div className="mt-3 md:mt-4 flex flex-col justify-between items-center w-full px-0 top-0">
-        <Link
-          href="/"
-          className="flex flex-row justify-center items-center rounded-full bg-transparent px-1 h-10 mb-2"
-        >
-          <text className={`text-4xl cloister`}>Divination</text>
-        </Link>
-        <div className="py-1 flex flex-row border-black border-t border-b w-full items-center px-2 md:px-3">
-          <div className="flex-1 flex text-sm">
-            <span className="hidden md:block font-medium">Late Night Edition</span>
-            <span className="font-medium md:hidden">Vol. XI</span>
+<div className="bg-gray-100 pb-24">
+          <Disclosure as="nav" className="bg-gray-100">
+            {({ open }) => (
+              <>
+                <div className="mx-auto sm:px-6 lg:px-8 py-4">
+                  <div className="">
+                    <div className="flex items-center justify-between px-4 sm:px-0">
+                      <div className="relative flex items-center">
+                        <div className="pt-1 flex-shrink-0 font-serif text-black text-2xl z-40">
+                          <div>Divination</div><div className="font-sans text-xs -mt-1 text-gray-500 font-light">A Conrad Holdings Subsidiary</div>
+                        </div>
+                        <div className="hidden md:block">
+                          <div className="flex items-baseline space-x-4 ml-16 3xl:ml-36 z-40">
+                            {navigation.map((item) => (
+                              <a
+                                key={item.name}
+                                href={item.href}
+                                className={classNames(
+                                  item.current
+                                    ? 'bg-gray-900 text-white'
+                                    : 'text-gray-500 border-b-2 border-transparent hover:border-medblue hover:text-black',
+                                  'px-3 py-2 text-sm font-light z-40'
+                                )}
+                                aria-current={item.current ? 'page' : undefined}
+                              >
+                                {item.name}
+                              </a>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+ 
+                    </div>
+                  </div>
+                </div>
+              </>
+            )}
+          </Disclosure>
           </div>
-          <div className="flex-grow md:flex-1 flex news font-semibold pt-1">
-            <span className="m-auto">{new Date().toDateString()}</span>
-          </div>
-          <div
-            onClick={() => setOpen(true)}
-            className="flex-1 flex flex-row justify-end text-sm font-medium hover:font-bold hover:cursor-pointer"
-          >
-            <span className="hidden md:block">Contact Us</span>
-            <span className="md:hidden">Contact</span>
-          </div>
-        </div>
-        <div className="text-4xl md:text-8xl font-extrabold tracking-tight text-center w-full pt-4">
-          <div className="">BAD PRODUCT</div>
-          <div className="">ENDS AT LAST!</div>
-        </div>
-        <div className="text-2xl md:text-3xl font-bold border-b border-black pt-4 md:pt-8 pb-4 md:pb-8 px-1 md:px-16 text-center uppercase tracking-tight w-full">
-          Divination is a product consultancy making magic in the digital age
-        </div>
-      </div>
-    </>
-  );
+      );
 }

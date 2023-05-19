@@ -10,7 +10,11 @@ module.exports = {
         'cloister': "Cloister"
       },
       colors: {
-        'tahiti': '#EC916A'
+        'deepblue': '#072533',
+        'medblue': '#1D6571',
+        'lightblue': '#91B9B9',
+        'deepyellow': '#A38033',
+        'lightyellow': '#E5D195',
       },
       animation: {
         flow: "flow 6s ease-in-out infinite",

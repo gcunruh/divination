@@ -4,7 +4,7 @@ import Head from "next/head";
 
 export default function Layout({ setOpen, children }) {
     return (
-        <>
+        <body className="h-full">
         <Head>
                 <title>Divination</title>
                 <meta name="description" content="Divination is a product consultancy making magic in the digital age" />
@@ -26,11 +26,11 @@ export default function Layout({ setOpen, children }) {
                 <meta name="twitter:description" content="Divination is a product consultancy making magic in the digital age" />
                 <meta name="twitter:image" content="https://divination.s3.us-west-2.amazonaws.com/divination_og.png" />
         </Head>
-        <div className="absolute left-8 md:left-10 right-8 md:right-10 mx-auto my-8 md:my-10 text-black bg-white border border-black shadow-xl shadow-black">
+        <div className="min-h-full">
             <Header setOpen={setOpen} />
             {children}
             <Footer />
         </div>
-        </>
+        </body>
     )
 }
