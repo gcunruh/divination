@@ -6,10 +6,10 @@ import {
 export default function Home() {
 
   return (
-    <main className="-mt-16 md:-mt-28 mx-auto bg-[url('/gridm.png')] md:bg-[url('/grid.png')] bg-[100%_auto] md:bg-[90%_auto] lg:bg-[85%_auto] xl:bg-[68%_auto] bg-top md:bg-right-top bg-no-repeat">
+    <main className="-mt-24 md:-mt-28 mx-auto bg-[url('/gridm.png')] md:bg-[url('/grid.png')] bg-[100%_auto] md:bg-[90%_auto] lg:bg-[85%_auto] xl:bg-[68%_auto] bg-top md:bg-right-top bg-no-repeat">
       <div className="mx-auto pb-12">
         <div className="flex flex-col px-4 lg:px-20 md:py-10 h-[70vh] md:h-[55vh] lg:h-[65vh] justify-end md:justify-center">
-          <div className="flex flex-col font-serif text-4xl md:text-5xl font-semibold space-y-4">
+          <div className="flex flex-col font-serif text-4xl md:text-5xl font-semibold space-y-2 md:space-y-4">
             <div>Catalyzing Change</div>
             <div>Fueling Business Success</div>
           </div>
@@ -183,10 +183,10 @@ export default function Home() {
           <div className="py-8 md:py-24">
           <div className="bg-gray-200 md:bg-deepblue text-black md:text-gray-100 mb-2 w-full text-left px-4 md:px-14 h-fit md:h-[25vh] py-4 md:py-6 flex flex-col justify-center items-center" id="contact">
               <div className="font-serif text-4xl md:text-5xl font-semibold tracking-wide pt-8 md:pt-10">Get in Touch</div>
-              <div className="text-white text-lg flex flex-row space-x-1 my-4">
+              <div className="text-black md:text-white text-lg flex flex-row space-x-1 my-4">
                     <a               href="mailto:gabriel@divination.dev?subject=Learn more about Divination!"
               target="_blank"
-              rel="noopener noreferrer"className="text-white w-fit border-b-2 border-medblue">
+              rel="noopener noreferrer"className="w-fit border-b-2 border-medblue">
                     Email Us
                     </a>
                     <div>
@@ -194,7 +194,7 @@ export default function Home() {
                     </div>
                     <a               href="https://www.linkedin.com/company/divination/"
               target="_blank"
-              rel="noopener noreferrer"className="text-white w-fit border-b-2 border-medblue">
+              rel="noopener noreferrer"className="w-fit border-b-2 border-medblue">
                         Connect on LinkedIn
                     </a>
                 </div>
